@@ -161,6 +161,9 @@ export default function ProductDetail() {
       </section>
 
       {/* Craftsmanship advantage */}
+      <section className="section-white">
+        <div className="container">
+          <span className="eyebrow">Our Craftsmanship</span>
           <h2 className="section-title">Built stronger from the bottom up.</h2>
           <div className="title-accent" />
           <div className="craft-grid">
