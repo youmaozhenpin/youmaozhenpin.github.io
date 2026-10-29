@@ -1,0 +1,189 @@
+/* ===== HERO ===== */
+.industries-hero {
+  padding: 90px 0;
+}
+
+.industries-hero .hero-badge {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--yellow);
+  margin-bottom: 20px;
+}
+
+.industries-hero h1 {
+  font-size: clamp(36px, 5vw, 60px);
+  color: var(--white);
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.industries-hero .hero-sub {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 680px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.hero-pill {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+.hero-pill strong {
+  color: var(--yellow);
+}
+
+/* ===== GRID ===== */
+.industry-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.industry-overview p {
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.mini-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 28px 0;
+}
+
+.mini-stat {
+  background: var(--bg-soft);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.mini-num {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--navy);
+}
+
+.mini-label {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.tags-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.tag {
+  background: var(--bg-soft);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.cta-line {
+  margin-top: 24px;
+  font-size: 16px;
+  color: var(--text) !important;
+}
+
+.cta-line a {
+  color: var(--navy);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* ===== CAPABILITIES CARD ===== */
+.capabilities-card {
+  background: var(--bg-soft);
+  border-radius: 14px;
+  padding: 32px;
+}
+
+.capabilities-card h4 {
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: 20px;
+}
+
+.capabilities-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.capabilities-card li {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 15px;
+  color: var(--text);
+}
+
+.capabilities-card li:last-child {
+  border-bottom: none;
+}
+
+/* ===== INDUSTRY CARDS ===== */
+.industry-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.ind-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px 24px;
+}
+
+.ind-card h3 {
+  font-size: 19px;
+  margin-bottom: 12px;
+}
+
+.ind-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.ind-link {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1000px) {
+  .industry-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .industry-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .industry-cards {
+    grid-template-columns: 1fr;
+  }
+}

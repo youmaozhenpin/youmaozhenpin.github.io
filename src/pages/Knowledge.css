@@ -1,0 +1,152 @@
+/* ===== HERO ===== */
+.knowledge-hero {
+  padding: 90px 0;
+}
+
+.knowledge-hero .hero-badge {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--yellow);
+  margin-bottom: 20px;
+}
+
+.knowledge-hero h1 {
+  font-size: clamp(36px, 5vw, 60px);
+  color: var(--white);
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.knowledge-hero .hero-sub {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 640px;
+  line-height: 1.7;
+}
+
+/* ===== FEATURED CARD ===== */
+.featured-card {
+  background: var(--navy);
+  border-radius: 14px;
+  padding: 40px;
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+.featured-icon {
+  font-size: 40px;
+  width: 72px;
+  height: 72px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.featured-card h3 {
+  color: var(--white);
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.featured-card p {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.featured-link {
+  color: var(--yellow);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+/* ===== SPEC GRID ===== */
+.spec-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.spec-item {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px 22px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--navy);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.spec-item:hover {
+  border-color: var(--navy);
+  box-shadow: 0 4px 16px rgba(15, 39, 64, 0.08);
+}
+
+.spec-item span {
+  color: var(--yellow);
+  font-size: 18px;
+}
+
+/* ===== GUIDES ===== */
+.guides-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.guide {
+  background: var(--bg-soft);
+  border-radius: 12px;
+  padding: 32px 28px;
+}
+
+.guide h3 {
+  font-size: 19px;
+  margin-bottom: 12px;
+}
+
+.guide p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.guide-link {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1000px) {
+  .spec-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .guides-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .featured-card {
+    flex-direction: column;
+  }
+  .spec-grid,
+  .guides-grid {
+    grid-template-columns: 1fr;
+  }
+}

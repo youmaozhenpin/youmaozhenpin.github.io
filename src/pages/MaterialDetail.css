@@ -1,0 +1,159 @@
+/* ===== HERO ===== */
+.material-hero {
+  padding: 90px 0;
+}
+
+.material-hero .hero-badge {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--yellow);
+  margin-bottom: 20px;
+}
+
+.material-hero h1 {
+  font-size: clamp(36px, 5vw, 60px);
+  color: var(--white);
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.hero-full {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+}
+
+.hero-desc {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 640px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.hero-spec-tag {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ===== GRID ===== */
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.tag-section {
+  margin-bottom: 28px;
+}
+
+.tag-section h4 {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: 14px;
+}
+
+.tags-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.tag-green {
+  background: #E8F5E9;
+  color: #2E7D32;
+}
+
+.tag-blue {
+  background: #E3F2FD;
+  color: #1565C0;
+}
+
+.tag-gray {
+  background: var(--bg-soft);
+  color: var(--navy);
+}
+
+/* ===== SPEC CARD ===== */
+.spec-card {
+  background: var(--bg-soft);
+  border-radius: 14px;
+  padding: 28px;
+}
+
+.spec-card h4 {
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: 20px;
+}
+
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.spec-table td {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+
+.spec-table td:first-child {
+  color: var(--text-muted);
+}
+
+.spec-table td:last-child {
+  text-align: right;
+  font-weight: 600;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.badge-green {
+  background: #E8F5E9;
+  color: #2E7D32;
+}
+
+.badge-blue {
+  background: #E3F2FD;
+  color: #1565C0;
+}
+
+.badge-red {
+  background: #FFEBEE;
+  color: #C62828;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .detail-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

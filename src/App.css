@@ -1,0 +1,46 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Floating CTA */
+.floating-cta {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--yellow);
+  color: var(--navy);
+  padding: 16px 24px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 15px;
+  box-shadow: 0 8px 24px rgba(255, 212, 0, 0.4);
+  z-index: 999;
+  transition: all 0.2s;
+}
+
+.floating-cta:hover {
+  background: var(--yellow-bright);
+  transform: translateY(-2px);
+}
+
+.floating-icon {
+  font-size: 16px;
+}
+
+@media (max-width: 560px) {
+  .floating-cta {
+    bottom: 20px;
+    right: 20px;
+    padding: 14px 18px;
+    font-size: 14px;
+  }
+}
