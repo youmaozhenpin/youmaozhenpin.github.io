@@ -105,9 +105,6 @@ export default function ProductDetail() {
       {isExpandable && (
         <section className="section-white">
           <div className="container">
-            <div style={{background:'#ff0000',color:'#fff',padding:'20px',textAlign:'center',fontSize:'24px',fontWeight:'bold',marginBottom:'30px'}}>
-              ✅ NEW: Floor Plan Drawings & Finish Options Below ↓
-            </div>
             <span className="eyebrow">Floor Plans</span>
             <h2 className="section-title">Choose your layout.</h2>
             <div className="title-accent" />
@@ -123,22 +120,6 @@ export default function ProductDetail() {
                   <div className="fp-area">{fp.area}</div>
                 </div>
               ))}
-            </div>
-
-            {/* Actual floor plan drawings */}
-            <div className="blueprint-gallery">
-              <div className="blueprint-item">
-                <img src="/floor-plans/20ft-page1.png" alt="20ft expandable house 3D render and dimensions" />
-                <p className="blueprint-caption">20ft Twin-Wing Expandable — 3D Render, Elevations & Floor Plan</p>
-              </div>
-              <div className="blueprint-item">
-                <img src="/floor-plans/20ft-page2.png" alt="1 bedroom 1 living room floor plan" />
-                <p className="blueprint-caption">1 Bedroom + Living Room Layout (20ft)</p>
-              </div>
-              <div className="blueprint-item">
-                <img src="/floor-plans/20ft-page10.png" alt="2 bedroom flat roof floor plan" />
-                <p className="blueprint-caption">2 Bedrooms + Living Room, Flat-Roof Version</p>
-              </div>
             </div>
           </div>
         </section>
@@ -176,26 +157,10 @@ export default function ProductDetail() {
               </ul>
             </div>
           </div>
-
-          {/* Finish & option gallery */}
-          <div className="options-gallery">
-            <h3 className="gallery-title">Available Finishes &amp; Upgrades</h3>
-            <div className="options-grid">
-              <div className="option-item">
-                <img src="/floor-plans/20ft-page15.png" alt="Metal carved exterior wall panel options" />
-                <p className="option-caption">Exterior Metal Carved Panels (28 colors &amp; textures)</p>
-              </div>
-              <div className="option-item">
-                <img src="/floor-plans/20ft-page17.png" alt="Entrance door and window options" />
-                <p className="option-caption">Doors &amp; Windows — Steel (standard), Aluminum &amp; Broken-Bridge Aluminum (upgrade)</p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
-      <section className="section-white">
-        <div className="container">
-          <span className="eyebrow">Our Craftsmanship</span>
+
+      {/* Craftsmanship advantage */}
           <h2 className="section-title">Built stronger from the bottom up.</h2>
           <div className="title-accent" />
           <div className="craft-grid">

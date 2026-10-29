@@ -11,6 +11,7 @@ import Materials from './pages/Materials';
 import MaterialDetail from './pages/MaterialDetail';
 import Industries from './pages/Industries';
 import IndustryDetail from './pages/IndustryDetail';
+import FloorPlans from './pages/FloorPlans';
 import './App.css';
 
 export default function App() {
@@ -28,6 +29,7 @@ export default function App() {
           <Route path="/materials/:id" element={<MaterialDetail />} />
           <Route path="/industries" element={<Industries />} />
           <Route path="/industries/:id" element={<IndustryDetail />} />
+          <Route path="/floor-plans" element={<FloorPlans />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>

@@ -52,6 +52,7 @@ export default function Navbar() {
             <Link to="/" className={location.pathname === '/' ? 'active' : ''}>Home</Link>
             <Link to="/about" className={location.pathname === '/about' ? 'active' : ''}>About Us</Link>
             <Link to="/products" className={location.pathname.startsWith('/products') ? 'active' : ''}>Products</Link>
+            <Link to="/floor-plans" className={location.pathname === '/floor-plans' ? 'active' : ''}>Floor Plans</Link>
             <Link to="/materials" className={location.pathname === '/materials' ? 'active' : ''}>Materials</Link>
             <Link to="/industries" className={location.pathname === '/industries' ? 'active' : ''}>Industries</Link>
             <Link to="/knowledge" className={location.pathname === '/knowledge' ? 'active' : ''}>Knowledge</Link>
