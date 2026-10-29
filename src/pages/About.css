@@ -1,4 +1,4 @@
-/* ===== HERO ===== */
+﻿/* ===== HERO ===== */
 .about-hero {
   padding: 100px 0;
 }
@@ -8,7 +8,7 @@
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.12em;
-  color: var(--yellow);
+  color: var(--accent);
   margin-bottom: 20px;
 }
 
@@ -56,12 +56,12 @@
 .card-num {
   font-size: 40px;
   font-weight: 800;
-  color: var(--navy);
+  color: var(--primary);
   line-height: 1;
 }
 
 .card-num span {
-  color: var(--yellow);
+  color: var(--accent);
 }
 
 .card-label {
@@ -86,8 +86,8 @@
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  border: 2px solid var(--navy);
-  color: var(--navy);
+  border: 2px solid var(--primary);
+  color: var(--primary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,7 +98,7 @@
 
 .card-cert strong {
   font-size: 14px;
-  color: var(--navy);
+  color: var(--primary);
   display: block;
 }
 
@@ -125,7 +125,7 @@
 .step-num {
   font-size: 16px;
   font-weight: 800;
-  color: var(--yellow);
+  color: var(--accent);
   margin-bottom: 16px;
 }
 
@@ -180,7 +180,7 @@
   top: 15px;
   width: 10px;
   height: 10px;
-  background: var(--yellow);
+  background: var(--accent);
 }
 
 /* ===== RESPONSIVE ===== */
@@ -208,3 +208,4 @@
     grid-template-columns: 1fr;
   }
 }
+

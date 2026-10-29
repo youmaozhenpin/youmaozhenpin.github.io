@@ -1,4 +1,4 @@
-/* ===== HERO ===== */
+﻿/* ===== HERO ===== */
 .products-hero {
   padding: 90px 0;
 }
@@ -8,7 +8,7 @@
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.12em;
-  color: var(--yellow);
+  color: var(--accent);
   margin-bottom: 20px;
 }
 
@@ -72,11 +72,11 @@
 .product-link {
   font-size: 15px;
   font-weight: 700;
-  color: var(--navy);
+  color: var(--primary);
 }
 
 .product-link .arrow {
-  color: var(--yellow);
+  color: var(--accent);
   margin-left: 4px;
 }
 
@@ -92,3 +92,4 @@
     grid-template-columns: 1fr;
   }
 }
+

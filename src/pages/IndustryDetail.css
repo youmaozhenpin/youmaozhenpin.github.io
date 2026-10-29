@@ -1,4 +1,4 @@
-/* ===== HERO ===== */
+﻿/* ===== HERO ===== */
 .industry-hero {
   padding: 90px 0;
 }
@@ -8,7 +8,7 @@
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.12em;
-  color: var(--yellow);
+  color: var(--accent);
   margin-bottom: 20px;
 }
 
@@ -42,7 +42,7 @@
   font-size: 12px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--navy);
+  color: var(--primary);
   margin-bottom: 12px;
 }
 
@@ -71,7 +71,7 @@
 
 .tag-gray {
   background: var(--bg-soft);
-  color: var(--navy);
+  color: var(--primary);
 }
 
 /* ===== SPEC CARD ===== */
@@ -85,7 +85,7 @@
   font-size: 13px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--navy);
+  color: var(--primary);
   margin-bottom: 16px;
 }
 
@@ -140,3 +140,4 @@
     gap: 40px;
   }
 }
+

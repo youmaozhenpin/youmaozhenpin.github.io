@@ -1,6 +1,6 @@
-/* ===== Top utility bar ===== */
+﻿/* ===== Top utility bar ===== */
 .topbar {
-  background: var(--navy-deep);
+  background: var(--primary-deep);
   color: rgba(255, 255, 255, 0.85);
   font-size: 13px;
   padding: 10px 0;
@@ -24,7 +24,7 @@
 }
 
 .topbar-yellow {
-  color: var(--yellow);
+  color: var(--accent);
   font-weight: 600;
 }
 
@@ -40,12 +40,12 @@
   background: var(--white);
   padding: 20px 0;
   border-bottom: 1px solid var(--border);
-  transition: all 0.2s;
+  transition: all 0.25s;
 }
 
 .navbar-scrolled {
   padding: 14px 0;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 20px rgba(13, 40, 24, 0.08);
 }
 
 .navbar-inner {
@@ -65,9 +65,10 @@
   font-size: 28px;
   font-weight: 900;
   color: var(--white);
-  background: var(--navy);
+  background: var(--primary);
   padding: 6px 12px;
   letter-spacing: -0.02em;
+  border-radius: 6px;
 }
 
 .logo-text {
@@ -79,7 +80,7 @@
 .logo-text strong {
   font-size: 18px;
   font-weight: 900;
-  color: var(--navy);
+  color: var(--primary);
   letter-spacing: 0.02em;
 }
 
@@ -101,7 +102,7 @@
 .nav-links a {
   font-size: 14px;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--primary);
   transition: color 0.2s;
   white-space: nowrap;
 }
@@ -121,7 +122,8 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: var(--yellow);
+  background: var(--accent);
+  border-radius: 2px;
 }
 
 .nav-cta {
@@ -143,7 +145,7 @@
 .hamburger span {
   width: 24px;
   height: 2px;
-  background: var(--navy);
+  background: var(--primary);
 }
 
 @media (max-width: 900px) {
@@ -170,3 +172,4 @@
     right: 0;
   }
 }
+

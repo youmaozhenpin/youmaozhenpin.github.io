@@ -1,14 +1,16 @@
-/* ===== YOUMAO ZHENPIN — Global Styles (Navy + Yellow B2B) ===== */
+/* ===== YOUMAO ZHENPIN - Global Styles (Forest Green + Warm Amber) ===== */
 :root {
-  --navy: #0F2740;
-  --navy-deep: #0A1B2E;
-  --yellow: #FFD400;
-  --yellow-bright: #FFE14D;
+  --primary: #1B4332;
+  --primary-deep: #0D2818;
+  --primary-light: #2D6A4F;
+  --accent: #E76F2E;
+  --accent-bright: #F08A4B;
+  --accent-soft: #FDF0E6;
   --white: #FFFFFF;
-  --bg-soft: #F5F7FA;
-  --text: #0F2740;
-  --text-muted: #5A6B7B;
-  --border: #E5E9EF;
+  --bg-soft: #F5F4F0;
+  --text: #1F2D27;
+  --text-muted: #5F7068;
+  --border: #E3E1D9;
   --font-display: 'Inter', 'Helvetica Neue', Arial, sans-serif;
   --font-body: 'Inter', 'Helvetica Neue', Arial, sans-serif;
   --max-width: 1280px;
@@ -54,7 +56,7 @@ h1, h2, h3, h4 {
   font-weight: 800;
   line-height: 1.15;
   letter-spacing: -0.02em;
-  color: var(--navy);
+  color: var(--primary);
 }
 
 .eyebrow {
@@ -63,14 +65,14 @@ h1, h2, h3, h4 {
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--navy);
+  color: var(--accent);
   margin-bottom: 16px;
 }
 
 .section-title {
   font-size: clamp(32px, 4.5vw, 52px);
   margin-bottom: 20px;
-  color: var(--navy);
+  color: var(--primary);
 }
 
 .section-subtitle {
@@ -81,12 +83,13 @@ h1, h2, h3, h4 {
   line-height: 1.7;
 }
 
-/* Yellow underline accent under section titles */
+/* Accent underline under section titles */
 .title-accent {
   width: 60px;
   height: 4px;
-  background: var(--yellow);
+  background: var(--accent);
   margin: 20px 0 28px;
+  border-radius: 2px;
 }
 
 /* ===== Buttons ===== */
@@ -101,18 +104,18 @@ h1, h2, h3, h4 {
   border: none;
   cursor: pointer;
   border-radius: 999px;
-  transition: all 0.2s ease;
+  transition: all 0.25s ease;
 }
 
 .btn-primary {
-  background: var(--yellow);
-  color: var(--navy);
+  background: var(--accent);
+  color: var(--white);
 }
 
 .btn-primary:hover {
-  background: var(--yellow-bright);
-  transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(255, 212, 0, 0.4);
+  background: var(--accent-bright);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(231, 111, 46, 0.35);
 }
 
 .btn-outline {
@@ -124,6 +127,7 @@ h1, h2, h3, h4 {
 .btn-outline:hover {
   border-color: var(--white);
   background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
 }
 
 /* ===== Sections ===== */
@@ -139,12 +143,13 @@ section {
   background: var(--bg-soft);
 }
 
-/* ===== Grid background (deep navy + subtle grid lines) ===== */
+/* ===== Grid background (deep green + subtle grid lines) ===== */
 .grid-bg {
-  background-color: var(--navy);
+  background-color: var(--primary);
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
   background-size: 48px 48px;
   background-position: center center;
 }
+

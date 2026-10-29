@@ -8,19 +8,19 @@ export default function Home() {
       {/* ===== HERO ===== */}
       <section className="hero grid-bg">
         <div className="container hero-content">
-          <span className="hero-badge">ISO 9001:2015 · CE CERTIFIED</span>
+          <span className="hero-badge">CE CERTIFIED · ISO 9001 · FACTORY DIRECT</span>
           <h1>
-            Bring us your<br />
-            <span className="hero-accent">housing project.</span>
+            Your Modular Home,<br />
+            <span className="hero-accent">Built in Weeks.</span>
           </h1>
           <p className="hero-sub">
-            15 years of manufacturing modular &amp; prefab houses — built to your
-            specification, exported to 50+ countries. From a single container office
-            to a full light steel villa community.
+            20 years of manufacturing prefab &amp; modular houses — engineered to your
+            spec, delivered to 50+ countries. From a single container office to a
+            full light-steel villa community.
           </p>
           <div className="hero-actions">
-            <Link to="/contact" className="btn btn-primary">Request a Quote →</Link>
-            <Link to="/products" className="btn btn-outline">See Products</Link>
+            <Link to="/contact" className="btn btn-primary">Get a Free Quote →</Link>
+            <Link to="/products" className="btn btn-outline">Explore Products</Link>
           </div>
         </div>
       </section>
@@ -30,11 +30,11 @@ export default function Home() {
         <div className="container stats-grid">
           <div className="stat">
             <div className="stat-num">20<span className="plus">+</span></div>
-            <div className="stat-label">Years Manufacturing Modular Homes</div>
+            <div className="stat-label">Years Manufacturing</div>
           </div>
           <div className="stat">
             <div className="stat-num">50<span className="plus">+</span></div>
-            <div className="stat-label">Countries Exported To</div>
+            <div className="stat-label">Countries Exported</div>
           </div>
           <div className="stat">
             <div className="stat-num">1000<span className="plus">+</span></div>
@@ -42,7 +42,7 @@ export default function Home() {
           </div>
           <div className="stat">
             <div className="stat-num">48<span className="plus">h</span></div>
-            <div className="stat-label">Quote Response Time</div>
+            <div className="stat-label">Quote Response</div>
           </div>
         </div>
       </section>
@@ -51,30 +51,30 @@ export default function Home() {
       <section className="section-white">
         <div className="container">
           <span className="eyebrow">Why Youmao Zhenpin</span>
-          <h2 className="section-title">A factory, not a trader.</h2>
+          <h2 className="section-title">A real factory, not a trading desk.</h2>
           <div className="title-accent" />
           <p className="section-subtitle">
-            We control every step — steel processing, panel production, assembly,
-            QC, and container loading. When you work with us, you deal directly
-            with the people who build your house.
+            We control every step — steel processing, wall panel production, assembly,
+            QC, and container loading. When you work with us, you deal directly with
+            the people who build your house.
           </p>
 
           <div className="features-grid">
             <div className="feature">
-              <h3>Factory Direct Price</h3>
-              <p>Cut out the trader markup. What you see is what the factory charges — with full transparency.</p>
+              <h3>Factory-Direct Pricing</h3>
+              <p>No middleman markup. What you see is what the factory charges — fully transparent, no hidden fees.</p>
             </div>
             <div className="feature">
               <h3>Fast Lead Time</h3>
-              <p>Standard models ship within 15 days. Custom villas in 35–45 days. We meet your project schedule.</p>
+              <p>Standard models ship in 15 days. Custom villas in 35–45 days. We hit your project schedule.</p>
             </div>
             <div className="feature">
               <h3>Global Shipping</h3>
-              <p>FOB, CIF, DDP — we handle everything to your port or door. 40HQ containers worldwide.</p>
+              <p>FOB, CIF, DDP — we handle everything to your port or your door. 40HQ containers worldwide.</p>
             </div>
             <div className="feature">
               <h3>Certified Quality</h3>
-              <p>CE, ISO 9001, SGS inspected. Steel, insulation, and electrical — all meet international standards.</p>
+              <p>CE, ISO 9001, SGS inspected. Steel, insulation, electrical — all meet international standards.</p>
             </div>
           </div>
         </div>
@@ -98,7 +98,7 @@ export default function Home() {
                 <div className="product-body">
                   <h3>{p.name}</h3>
                   <p>{p.tagline}</p>
-                  <span className="product-link">View →</span>
+                  <span className="product-link">View details →</span>
                 </div>
               </Link>
             ))}

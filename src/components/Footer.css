@@ -1,5 +1,5 @@
-.footer {
-  background: var(--navy-deep);
+﻿.footer {
+  background: var(--primary-deep);
   color: rgba(255, 255, 255, 0.7);
   padding: 70px 0 30px;
 }
@@ -21,9 +21,10 @@
 .footer-logo .logo-mark {
   font-size: 24px;
   font-weight: 900;
-  color: var(--navy);
-  background: var(--yellow);
+  color: var(--white);
+  background: var(--primary);
   padding: 4px 10px;
+  border-radius: 6px;
 }
 
 .footer-logo strong {
@@ -49,7 +50,7 @@
   font-size: 13px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--yellow);
+  color: var(--accent);
   margin-bottom: 18px;
 }
 
@@ -86,3 +87,4 @@
     grid-template-columns: 1fr;
   }
 }
+

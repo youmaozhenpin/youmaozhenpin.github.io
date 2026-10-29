@@ -1,4 +1,4 @@
-/* ===== HERO ===== */
+﻿/* ===== HERO ===== */
 .knowledge-hero {
   padding: 90px 0;
 }
@@ -8,7 +8,7 @@
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.12em;
-  color: var(--yellow);
+  color: var(--accent);
   margin-bottom: 20px;
 }
 
@@ -28,7 +28,7 @@
 
 /* ===== FEATURED CARD ===== */
 .featured-card {
-  background: var(--navy);
+  background: var(--primary);
   border-radius: 14px;
   padding: 40px;
   display: flex;
@@ -62,7 +62,7 @@
 }
 
 .featured-link {
-  color: var(--yellow);
+  color: var(--accent);
   font-weight: 700;
   font-size: 15px;
 }
@@ -82,7 +82,7 @@
   padding: 20px 22px;
   font-size: 15px;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--primary);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -90,12 +90,12 @@
 }
 
 .spec-item:hover {
-  border-color: var(--navy);
+  border-color: var(--primary);
   box-shadow: 0 4px 16px rgba(15, 39, 64, 0.08);
 }
 
 .spec-item span {
-  color: var(--yellow);
+  color: var(--accent);
   font-size: 18px;
 }
 
@@ -128,7 +128,7 @@
 .guide-link {
   font-size: 14px;
   font-weight: 700;
-  color: var(--navy);
+  color: var(--primary);
 }
 
 /* ===== RESPONSIVE ===== */
@@ -150,3 +150,4 @@
     grid-template-columns: 1fr;
   }
 }
+

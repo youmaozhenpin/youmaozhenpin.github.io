@@ -23,9 +23,9 @@ export default function Navbar() {
       <div className="topbar">
         <div className="container topbar-inner">
           <div className="topbar-left">
-            <span>WhatsApp: +86 15690180200</span>
+            <a href="https://wa.me/8615690180200" target="_blank" rel="noopener noreferrer">WhatsApp: +86 15690180200</a>
             <span className="dot">·</span>
-            <span>youmaozhenpin0410@gmail.com</span>
+            <a href="mailto:youmaozhenpin0410@gmail.com">youmaozhenpin0410@gmail.com</a>
           </div>
           <div className="topbar-right">
             <span className="topbar-yellow">ISO 9001:2015</span>
@@ -56,7 +56,7 @@ export default function Navbar() {
             <Link to="/industries" className={location.pathname === '/industries' ? 'active' : ''}>Industries</Link>
             <Link to="/knowledge" className={location.pathname === '/knowledge' ? 'active' : ''}>Knowledge</Link>
             <Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''}>Contact</Link>
-            <Link to="/contact" className="btn btn-primary nav-cta">Request a Quote →</Link>
+            <Link to="/contact" className="btn btn-primary nav-cta">Get Quote →</Link>
           </nav>
 
           <button

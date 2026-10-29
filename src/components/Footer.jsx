@@ -37,8 +37,8 @@ export default function Footer() {
 
           <div className="footer-col">
             <h4>Contact</h4>
-            <p>WhatsApp: +86 15690180200</p>
-            <p>Email: youmaozhenpin0410@gmail.com</p>
+            <a href="https://wa.me/8615690180200" target="_blank" rel="noopener noreferrer">WhatsApp: +86 15690180200</a>
+            <a href="mailto:youmaozhenpin0410@gmail.com">Email: youmaozhenpin0410@gmail.com</a>
             <p>Hengshui, Hebei, China</p>
           </div>
         </div>

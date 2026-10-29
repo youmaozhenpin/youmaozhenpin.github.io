@@ -8,7 +8,7 @@
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.12em;
-  color: var(--yellow);
+  color: var(--accent);
   margin-bottom: 20px;
 }
 
@@ -44,7 +44,7 @@
   font-size: 12px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--navy);
+  color: var(--primary);
   margin-bottom: 6px;
 }
 
@@ -62,7 +62,7 @@
   font-size: 12px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--navy);
+  color: var(--primary);
   margin-bottom: 16px;
 }
 
@@ -85,10 +85,10 @@
   top: 13px;
   width: 10px;
   height: 10px;
-  background: var(--yellow);
+  background: var(--accent);
 }
 
-/* Right column — form */
+/* Right column - form */
 .contact-form-wrap {
   background: var(--bg-soft);
   border-radius: 16px;
@@ -131,7 +131,7 @@
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus {
-  border-color: var(--navy);
+  border-color: var(--primary);
 }
 
 .contact-form textarea {
@@ -156,7 +156,7 @@
 /* Success */
 .success-msg {
   background: var(--white);
-  border: 2px solid var(--yellow);
+  border: 2px solid var(--accent);
   border-radius: 16px;
   padding: 60px 40px;
   text-align: center;
@@ -164,7 +164,7 @@
 
 .success-msg h3 {
   font-size: 26px;
-  color: var(--navy);
+  color: var(--primary);
   margin-bottom: 16px;
 }
 
@@ -186,3 +186,4 @@
     padding: 28px;
   }
 }
+

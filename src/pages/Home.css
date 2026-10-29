@@ -1,4 +1,4 @@
-/* ===== HERO ===== */
+﻿/* ===== HERO ===== */
 .hero {
   position: relative;
   min-height: 88vh;
@@ -17,7 +17,7 @@
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.12em;
-  color: var(--yellow);
+  color: var(--accent-bright);
   margin-bottom: 24px;
 }
 
@@ -29,12 +29,12 @@
 }
 
 .hero-accent {
-  color: var(--yellow);
+  color: var(--accent-bright);
 }
 
 .hero-sub {
   font-size: 18px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.82);
   max-width: 580px;
   margin-bottom: 40px;
   line-height: 1.7;
@@ -62,13 +62,13 @@
 .stat-num {
   font-size: 40px;
   font-weight: 800;
-  color: var(--navy);
+  color: var(--primary);
   line-height: 1;
   margin-bottom: 8px;
 }
 
 .stat-num .plus {
-  color: var(--yellow);
+  color: var(--accent);
 }
 
 .stat-label {
@@ -81,21 +81,22 @@
 .features-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  gap: 24px;
   margin-top: 40px;
 }
 
 .feature {
-  padding: 32px 24px;
+  padding: 36px 28px;
   background: var(--white);
   border: 1px solid var(--border);
-  border-radius: 8px;
-  transition: all 0.2s;
+  border-radius: 12px;
+  transition: all 0.25s ease;
 }
 
 .feature:hover {
-  border-color: var(--navy);
-  box-shadow: 0 8px 24px rgba(15, 39, 64, 0.08);
+  border-color: var(--primary-light);
+  box-shadow: 0 12px 32px rgba(27, 67, 50, 0.1);
+  transform: translateY(-3px);
 }
 
 .feature h3 {
@@ -119,14 +120,14 @@
 .product-card {
   background: var(--white);
   border: 1px solid var(--border);
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
-  transition: all 0.2s;
+  transition: all 0.25s ease;
 }
 
 .product-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(15, 39, 64, 0.12);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(27, 67, 50, 0.15);
 }
 
 .product-img {
@@ -155,12 +156,12 @@
 .product-link {
   font-size: 14px;
   font-weight: 700;
-  color: var(--navy);
+  color: var(--accent);
 }
 
 /* ===== CTA ===== */
 .cta-banner {
-  background: var(--navy);
+  background: var(--primary);
   padding: 100px 0;
   text-align: center;
 }
@@ -195,3 +196,4 @@
     grid-template-columns: 1fr;
   }
 }
+

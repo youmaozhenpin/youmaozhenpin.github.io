@@ -33,11 +33,16 @@ export default function App() {
       </main>
       <Footer />
 
-      {/* Floating CTA */}
-      <Link to="/contact" className="floating-cta">
-        <span className="floating-icon">✉</span>
-        Request a Quote
-      </Link>
+      {/* Floating WhatsApp CTA */}
+      <a
+        href="https://wa.me/8615690180200?text=Hi%2C%20I%27m%20interested%20in%20your%20prefab%20houses."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="floating-cta"
+      >
+        <span className="floating-icon">💬</span>
+        WhatsApp Us
+      </a>
     </div>
   );
 }

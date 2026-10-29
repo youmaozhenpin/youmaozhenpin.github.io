@@ -1,4 +1,4 @@
-/* ===== HERO ===== */
+﻿/* ===== HERO ===== */
 .materials-hero {
   padding: 90px 0;
 }
@@ -8,7 +8,7 @@
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.12em;
-  color: var(--yellow);
+  color: var(--accent);
   margin-bottom: 20px;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .material-card:hover {
-  border-color: var(--navy);
+  border-color: var(--primary);
   box-shadow: 0 8px 24px rgba(15, 39, 64, 0.08);
 }
 
@@ -61,7 +61,7 @@
 .material-tag {
   font-size: 12px;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--primary);
   background: var(--bg-soft);
   padding: 4px 10px;
   border-radius: 999px;
@@ -84,11 +84,11 @@
 .material-link {
   font-size: 14px;
   font-weight: 700;
-  color: var(--navy);
+  color: var(--primary);
 }
 
 .material-link span {
-  color: var(--yellow);
+  color: var(--accent);
   margin-left: 2px;
 }
 
@@ -104,3 +104,4 @@
     grid-template-columns: 1fr;
   }
 }
+
