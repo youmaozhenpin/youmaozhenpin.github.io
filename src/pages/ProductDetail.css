@@ -262,6 +262,81 @@
   line-height: 1.7;
 }
 
+/* Blueprint gallery */
+.blueprint-gallery {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.blueprint-item {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  border: 1px solid #eee;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.blueprint-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.blueprint-item img {
+  width: 100%;
+  display: block;
+  background: #f8f8f8;
+}
+
+.blueprint-caption {
+  padding: 1rem 1.25rem;
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Options gallery */
+.options-gallery {
+  margin-top: 3rem;
+}
+
+.gallery-title {
+  font-size: 1.4rem;
+  color: var(--primary-deep);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.option-item {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  border: 1px solid #eee;
+}
+
+.option-item img {
+  width: 100%;
+  display: block;
+}
+
+.option-caption {
+  padding: 1rem 1.25rem;
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+  font-weight: 500;
+}
+
 @media (max-width: 900px) {
   .floorplan-grid {
     grid-template-columns: repeat(2, 1fr);
