@@ -74,32 +74,6 @@ const FloorPlans = () => {
         </div>
       </section>
 
-      {/* Popular Options */}
-      <section className="fp-section fp-section-soft">
-        <div className="container">
-          <h2 className="fp-section-title">Popular Options & Finishes</h2>
-          <p className="fp-section-desc">
-            Standard features are included with every house. Premium upgrades are available at additional cost.
-          </p>
-          <div className="fp-gallery">
-            {options.map((opt) => (
-              <div className="fp-card" key={opt.img}>
-                <img
-                  src={opt.img}
-                  alt={opt.title}
-                  loading="lazy"
-                  onClick={() => openLightbox(opt.img, opt.title)}
-                />
-                <div className="fp-card-body">
-                  <h4 className="fp-card-title">{opt.title}</h4>
-                  <p className="fp-card-desc">{opt.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* 20ft Series */}
       <section className="fp-section">
         <div className="container">
