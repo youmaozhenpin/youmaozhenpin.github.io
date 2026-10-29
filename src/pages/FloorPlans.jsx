@@ -1,17 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './FloorPlans.css';
 
 const FloorPlans = () => {
+  const [lightboxImg, setLightboxImg] = useState(null);
+
   const ft20 = Array.from({ length: 24 }, (_, i) => i + 1);
   const ft30 = Array.from({ length: 30 }, (_, i) => i + 1);
   const ft40 = Array.from({ length: 30 }, (_, i) => i + 1);
+
+  const openLightbox = (imgSrc, alt) => {
+    setLightboxImg({ src: imgSrc, alt });
+  };
+
+  const closeLightbox = () => {
+    setLightboxImg(null);
+  };
 
   const renderGallery = (prefix, pages, sizeLabel) => (
     <div className="fp-gallery">
       {pages.map((page) => (
         <div className="fp-card" key={`${prefix}-${page}`}>
-          <img src={`/floor-plans/${prefix}-page${page}.png`} alt={`${sizeLabel} page ${page}`} loading="lazy" />
-          <p className="fp-caption">{sizeLabel} — Page {page}</p>
+          <img
+            src={`/floor-plans/${prefix}-page${page}.png`}
+            alt={`${sizeLabel} page ${page}`}
+            loading="lazy"
+            onClick={() => openLightbox(`/floor-plans/${prefix}-page${page}.png`, `${sizeLabel} — Page ${page}`)}
+          />
+          <p className="fp-caption" onClick={() => openLightbox(`/floor-plans/${prefix}-page${page}.png`, `${sizeLabel} — Page ${page}`)}>
+            {sizeLabel} — Page {page}
+          </p>
         </div>
       ))}
     </div>
@@ -32,6 +49,17 @@ const FloorPlans = () => {
 
   return (
     <div className="floorplans-page">
+      {/* Lightbox */}
+      {lightboxImg && (
+        <div className="lightbox-overlay" onClick={closeLightbox}>
+          <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
+            <button className="lightbox-close" onClick={closeLightbox}>×</button>
+            <img src={lightboxImg.src} alt={lightboxImg.alt} />
+            <p className="lightbox-caption">{lightboxImg.alt}</p>
+          </div>
+        </div>
+      )}
+
       {/* Hero */}
       <section className="fp-hero">
         <div className="container">
@@ -41,6 +69,7 @@ const FloorPlans = () => {
           <p className="fp-subtitle">
             Browse our complete catalog — technical drawings, floor plans, layout options,
             and all available finishes for your custom expandable house.
+            <br /><small style={{opacity:0.8}}>Click any image to enlarge.</small>
           </p>
         </div>
       </section>
@@ -55,7 +84,12 @@ const FloorPlans = () => {
           <div className="fp-gallery">
             {options.map((opt) => (
               <div className="fp-card" key={opt.img}>
-                <img src={opt.img} alt={opt.title} loading="lazy" />
+                <img
+                  src={opt.img}
+                  alt={opt.title}
+                  loading="lazy"
+                  onClick={() => openLightbox(opt.img, opt.title)}
+                />
                 <div className="fp-card-body">
                   <h4 className="fp-card-title">{opt.title}</h4>
                   <p className="fp-card-desc">{opt.desc}</p>

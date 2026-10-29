@@ -99,6 +99,74 @@
   line-height: 1.5;
 }
 
+/* Lightbox */
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  cursor: zoom-out;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 95vw;
+  max-height: 90vh;
+  cursor: default;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 85vh;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow: 0 10px 60px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 36px;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+  width: 36px;
+  height: 36px;
+}
+
+.lightbox-close:hover {
+  color: var(--accent);
+}
+
+.lightbox-caption {
+  color: white;
+  text-align: center;
+  margin: 16px 0 0;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.fp-card img {
+  cursor: zoom-in;
+  transition: opacity 0.2s;
+}
+
+.fp-card img:hover {
+  opacity: 0.9;
+}
+
 .fp-cta {
   background: linear-gradient(135deg, var(--accent) 0%, var(--accent-bright) 100%);
   color: white;
