@@ -123,7 +123,6 @@ export default function ProductDetail() {
             </div>
 
             {/* Actual floor plan drawings */}
-            <h2 style={{color:'red', fontSize:'2rem'}}>TEST: Floor Plan Drawings Below</h2>
             <div className="blueprint-gallery">
               <div className="blueprint-item">
                 <img src="/floor-plans/20ft-page1.png" alt="20ft expandable house 3D render and dimensions" />
