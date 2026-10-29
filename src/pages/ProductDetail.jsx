@@ -105,6 +105,9 @@ export default function ProductDetail() {
       {isExpandable && (
         <section className="section-white">
           <div className="container">
+            <div style={{background:'#ff0000',color:'#fff',padding:'20px',textAlign:'center',fontSize:'24px',fontWeight:'bold',marginBottom:'30px'}}>
+              ✅ NEW: Floor Plan Drawings & Finish Options Below ↓
+            </div>
             <span className="eyebrow">Floor Plans</span>
             <h2 className="section-title">Choose your layout.</h2>
             <div className="title-accent" />
