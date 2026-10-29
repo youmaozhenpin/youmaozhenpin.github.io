@@ -32,11 +32,23 @@ const FloorPlans = () => {
             </div>
             <div className="fp-card">
               <img src="/floor-plans/20ft-page2.png" alt="1 bedroom 1 living room layout" />
-              <p className="fp-caption">1 Bedroom + Living Room Layout</p>
+              <p className="fp-caption">1 Bedroom + Living Room Layout (Standard)</p>
+            </div>
+            <div className="fp-card">
+              <img src="/floor-plans/20ft-page3.png" alt="1 bedroom alternate layout" />
+              <p className="fp-caption">1 Bedroom + Living Room Layout (Alternate)</p>
             </div>
             <div className="fp-card">
               <img src="/floor-plans/20ft-page10.png" alt="2 bedroom flat roof layout" />
               <p className="fp-caption">2 Bedrooms + Living Room, Flat-Roof Version</p>
+            </div>
+            <div className="fp-card">
+              <img src="/floor-plans/20ft-page15.png" alt="Exterior wall panel options" />
+              <p className="fp-caption">Exterior Metal Carved Panels — 28 Colors & Textures</p>
+            </div>
+            <div className="fp-card">
+              <img src="/floor-plans/20ft-page17.png" alt="Door and window options" />
+              <p className="fp-caption">Doors & Windows — Steel (Standard) / Aluminum (Upgrade)</p>
             </div>
           </div>
         </div>
@@ -47,12 +59,21 @@ const FloorPlans = () => {
         <div className="container">
           <h2 className="fp-section-title">30ft Expandable Series</h2>
           <p className="fp-section-desc">
-            Larger footprint — perfect for families or small offices. Multiple layout options available.
+            Larger footprint — perfect for families or small offices.
+            One 40HQ container holds 1 set.
           </p>
           <div className="fp-gallery">
             <div className="fp-card">
               <img src="/floor-plans/30ft-page1.png" alt="30ft expandable house overview" />
-              <p className="fp-caption">30ft Series Overview</p>
+              <p className="fp-caption">Overview — 3D Render & Dimensions</p>
+            </div>
+            <div className="fp-card">
+              <img src="/floor-plans/30ft-page2.png" alt="30ft expanded layout" />
+              <p className="fp-caption">Expanded Layout — Top View</p>
+            </div>
+            <div className="fp-card">
+              <img src="/floor-plans/30ft-page3.png" alt="30ft interior layout" />
+              <p className="fp-caption">Interior Layout Plan</p>
             </div>
           </div>
         </div>
@@ -68,27 +89,15 @@ const FloorPlans = () => {
           <div className="fp-gallery">
             <div className="fp-card">
               <img src="/floor-plans/40ft-page1.png" alt="40ft expandable house overview" />
-              <p className="fp-caption">40ft Series Overview</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Finish Options */}
-      <section className="fp-section fp-section-soft">
-        <div className="container">
-          <h2 className="fp-section-title">Finish & Upgrade Options</h2>
-          <p className="fp-section-desc">
-            Standard finishes are included. Premium upgrades available at additional cost.
-          </p>
-          <div className="fp-gallery">
-            <div className="fp-card">
-              <img src="/floor-plans/20ft-page15.png" alt="Exterior wall panel options" />
-              <p className="fp-caption">Exterior Metal Carved Panels — 28 Colors & Textures</p>
+              <p className="fp-caption">Overview — 3D Render & Dimensions</p>
             </div>
             <div className="fp-card">
-              <img src="/floor-plans/20ft-page17.png" alt="Door and window options" />
-              <p className="fp-caption">Doors & Windows — Steel (Standard) / Aluminum (Upgrade)</p>
+              <img src="/floor-plans/40ft-page2.png" alt="40ft expanded layout" />
+              <p className="fp-caption">Expanded Layout — Top View</p>
+            </div>
+            <div className="fp-card">
+              <img src="/floor-plans/40ft-page3.png" alt="40ft interior layout" />
+              <p className="fp-caption">Interior Layout Plan</p>
             </div>
           </div>
         </div>
