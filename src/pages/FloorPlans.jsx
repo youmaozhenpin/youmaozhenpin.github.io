@@ -2,23 +2,33 @@ import React from 'react';
 import './FloorPlans.css';
 
 const FloorPlans = () => {
-  // 20ft: 24 pages
   const ft20 = Array.from({ length: 24 }, (_, i) => i + 1);
-  // 30ft: 30 pages
   const ft30 = Array.from({ length: 30 }, (_, i) => i + 1);
-  // 40ft: 30 pages
   const ft40 = Array.from({ length: 30 }, (_, i) => i + 1);
 
   const renderGallery = (prefix, pages, sizeLabel) => (
     <div className="fp-gallery">
       {pages.map((page) => (
         <div className="fp-card" key={`${prefix}-${page}`}>
-          <img src={`/floor-plans/${prefix}-page${page}.png`} alt={`${sizeLabel} page ${page}`} />
+          <img src={`/floor-plans/${prefix}-page${page}.png`} alt={`${sizeLabel} page ${page}`} loading="lazy" />
           <p className="fp-caption">{sizeLabel} — Page {page}</p>
         </div>
       ))}
     </div>
   );
+
+  const options = [
+    { img: '/options/craft-comparison.png', title: 'Our Craft vs Others', desc: 'Vertical steel frame + cement & wood floor = stronger, lighter, safer' },
+    { img: '/options/terrace-roof.png', title: 'Terrace & Pitched Roof', desc: '1.5M / 2M / 3M terrace options, pitched roof upgrade available' },
+    { img: '/options/lights-sockets.png', title: 'Lights & Sockets', desc: 'LED panel lights, ceiling lamps, full electrical wiring included' },
+    { img: '/options/kitchen-bathroom.png', title: 'Kitchen & Bathroom', desc: 'L-shaped kitchen cabinets, wet/dry separated bathroom included' },
+    { img: '/options/pvc-flooring.png', title: 'PVC Flooring (Standard)', desc: '50+ colors available, no extra charge' },
+    { img: '/options/spc-flooring.png', title: 'SPC Stone Plastic Flooring (Upgrade)', desc: 'Premium waterproof flooring, 8 wood grain colors' },
+    { img: '/options/curtainwall-doors.png', title: 'Glass Curtain Wall & Inner Doors', desc: 'Full glass curtain wall upgrade, aluminum-wood interior doors' },
+    { img: '/options/framework-colors.png', title: 'Steel Frame Colors', desc: 'White / Black / Brown / Gray — no extra charge' },
+    { img: '/options/wallpanel-colors.png', title: 'Wall Panel Colors', desc: 'White / Wood grain / Gray — standard colors included' },
+    { img: '/options/interior-colors.png', title: 'Interior Wall Finishes', desc: 'White / light wood grain standard, SPC carbon crystal board upgrade' },
+  ];
 
   return (
     <div className="floorplans-page">
@@ -26,12 +36,33 @@ const FloorPlans = () => {
       <section className="fp-hero">
         <div className="container">
           <span className="eyebrow">Floor Plans & Full Catalog</span>
-          <h1 className="fp-title">Complete Drawings Catalog</h1>
+          <h1 className="fp-title">Drawings, Layouts & Options</h1>
           <div className="title-accent" />
           <p className="fp-subtitle">
-            All technical drawings, floor plans, layout options, and finish selections —
-            browse the full catalog for each size.
+            Browse our complete catalog — technical drawings, floor plans, layout options,
+            and all available finishes for your custom expandable house.
           </p>
+        </div>
+      </section>
+
+      {/* Popular Options */}
+      <section className="fp-section fp-section-soft">
+        <div className="container">
+          <h2 className="fp-section-title">Popular Options & Finishes</h2>
+          <p className="fp-section-desc">
+            Standard features are included with every house. Premium upgrades are available at additional cost.
+          </p>
+          <div className="fp-gallery">
+            {options.map((opt) => (
+              <div className="fp-card" key={opt.img}>
+                <img src={opt.img} alt={opt.title} loading="lazy" />
+                <div className="fp-card-body">
+                  <h4 className="fp-card-title">{opt.title}</h4>
+                  <p className="fp-card-desc">{opt.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
