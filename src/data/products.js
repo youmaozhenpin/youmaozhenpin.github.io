@@ -30,7 +30,7 @@ export const products = [
     description:
       'Our best-selling flat-pack range. Delivered as panels, assembled on site with basic tools. Perfect for offices, clinics, hotels, and staff housing.',
     image:
-      'https://aka.doubaocdn.com/s/00NKkVNspk',
+      'https://aka.doubaocdn.com/s/7ppKwIXTLz',
     specs: [
       { label: 'Standard Size', value: '20ft / 40ft available' },
       { label: 'Wall Panel', value: '50mm EPS / rockwool sandwich' },
@@ -54,7 +54,7 @@ export const products = [
     description:
       'The most popular product for residential and Airbnb use. Two wings hydraulically expand to reveal a spacious open-plan living area — your house in a shipping container.',
     image:
-      'https://aka.doubaocdn.com/s/5CwdUkypiw',
+      'https://aka.doubaocdn.com/s/VLaiWcLSww',
     specs: [
       { label: 'Expanded Size', value: '5900 × 6300 × 2500 mm' },
       { label: 'Living Area', value: '≈ 37 m²' },
@@ -78,7 +78,7 @@ export const products = [
     description:
       'Custom-designed luxury homes built on a light gauge steel frame. Fully customized floor plans, facades, and interiors — delivered to your site as a kit.',
     image:
-      'https://aka.doubaocdn.com/s/kts3yUGQ2j',
+      'https://aka.doubaocdn.com/s/SxvPuHaEag',
     specs: [
       { label: 'Custom Size', value: '80 m² – 500 m²' },
       { label: 'Stories', value: '1–3 floors' },
@@ -102,7 +102,7 @@ export const products = [
     description:
       'A premium office solution with glass facades, air conditioning, and modern interiors. Perfect for construction site headquarters, co-working spaces, and retail pop-ups.',
     image:
-      'https://aka.doubaocdn.com/s/3brsPJak9V',
+      'https://aka.doubaocdn.com/s/z4SB9bVAbD',
     specs: [
       { label: 'Size', value: '20ft / 40ft' },
       { label: 'Glass Wall', value: 'Double glazing, optional' },
@@ -126,7 +126,7 @@ export const products = [
     description:
       'A compact luxury home on a trailer or permanent foundation. Designed for nomads, weekend getaways, and eco-living enthusiasts — fully off-grid capable.',
     image:
-      'https://aka.doubaocdn.com/s/bPVevj73nk',
+      'https://aka.doubaocdn.com/s/fnwqaW64BJ',
     specs: [
       { label: 'Size', value: '6m / 8m / 10m length' },
       { label: 'Area', value: '18 m² – 35 m²' },
@@ -142,5 +142,149 @@ export const products = [
       'Turnkey, move-in ready',
     ],
     bestFor: 'Tiny living, glamping, guest houses, eco-resorts',
+  },
+  {
+    id: 'double-story-house',
+    name: 'Double-Story Container House',
+    tagline: 'Two-story stackable with external staircase and balcony.',
+    description:
+      'Two-story stackable container house with external staircase and balcony. Wood grain finish. Perfect for offices, dormitories, and small residential buildings.',
+    image:
+      'https://aka.doubaocdn.com/s/kts3yUGQ2j',
+    specs: [
+      { label: 'Size', value: '20ft per unit' },
+      { label: 'Stories', value: '2 floors' },
+      { label: 'Frame', value: 'Q235B galvanized steel' },
+      { label: 'Balcony', value: 'Included' },
+      { label: 'Finish', value: 'Wood grain metal panel' },
+      { label: 'Life Span', value: '20+ years' },
+    ],
+    features: [
+      'External staircase with safety railing',
+      'Upstairs balcony with panoramic views',
+      'Wood grain exterior finish',
+      'Can be expanded to 3-4 floors',
+    ],
+    bestFor: 'Site offices, worker dormitories, small offices',
+  },
+  {
+    id: 'porch-flat-pack',
+    name: 'Flat Pack House with Porch',
+    tagline: 'Spacious single-story home with covered porch and deck.',
+    description:
+      'Spacious single-story flat pack house with covered porch and wooden deck. Yellow exterior finish. Ideal for small family homes, granny flats, and guest houses.',
+    image:
+      'https://aka.doubaocdn.com/s/00NKkVNspk',
+    specs: [
+      { label: 'Size', value: '30ft / 40ft available' },
+      { label: 'Porch', value: 'Covered, with deck' },
+      { label: 'Wall Panel', value: '50mm EPS sandwich' },
+      { label: 'Windows', value: 'Aluminum double glazing' },
+      { label: 'Roof', value: 'Single slope' },
+      { label: 'Life Span', value: '20+ years' },
+    ],
+    features: [
+      'Covered front porch with wooden deck',
+      'Multiple windows for natural light',
+      'Can add extra rooms on sides',
+      'Fully customizable interior layout',
+    ],
+    bestFor: 'Small family homes, granny flats, guest houses',
+  },
+  {
+    id: 'apple-cabin',
+    name: 'Apple Cabin / Space Capsule',
+    tagline: 'Luxury glamping pod with floor-to-ceiling glass.',
+    description:
+      'Luxury glamping pod / apple cabin with floor-to-ceiling panoramic glass. Smart LED lighting, premium interior. The most popular choice for resorts and scenic spots.',
+    image:
+      'https://aka.doubaocdn.com/s/bPVevj73nk',
+    specs: [
+      { label: 'Size', value: 'S88 / S90 / S120 available' },
+      { label: 'Glass', value: 'Floor-to-ceiling panoramic' },
+      { label: 'Interior', value: 'Bedroom, bathroom, mini kitchen' },
+      { label: 'Smart Features', value: 'LED lighting, AC, smart control' },
+      { label: 'Power', value: '220V standard / solar option' },
+      { label: 'Life Span', value: '15+ years' },
+    ],
+    features: [
+      'Panoramic floor-to-ceiling glass windows',
+      'Luxury hotel-style interior',
+      'Smart LED ambient lighting system',
+      'Fast installation — ready in 1 day',
+    ],
+    bestFor: 'Glamping resorts, scenic spots, boutique hotels',
+  },
+  {
+    id: 'seaside-villas',
+    name: 'Seaside Resort Villas',
+    tagline: 'Multiple units arranged as a beachfront resort.',
+    description:
+      'Multiple container villa units arranged as a beachfront resort community. Perfect for hospitality projects, beach resorts, and vacation rental communities.',
+    image:
+      'https://aka.doubaocdn.com/s/5CwdUkypiw',
+    specs: [
+      { label: 'Unit Size', value: '20ft / 40ft' },
+      { label: 'Arrangement', value: 'Multiple units' },
+      { label: 'Layout', value: 'Living area, bedroom, bathroom' },
+      { label: 'Outdoor', value: 'Garden, wooden walkways' },
+      { label: 'Customization', value: 'Full color and interior options' },
+      { label: 'Life Span', value: '20+ years' },
+    ],
+    features: [
+      'Modular design — expand as needed',
+      'Shared garden and walkway design',
+      'Private outdoor space per unit',
+      'Ideal for Airbnb and vacation rentals',
+    ],
+    bestFor: 'Beach resorts, vacation communities, glamping sites',
+  },
+  {
+    id: 'glass-office',
+    name: 'Glass Curtain Wall Container',
+    tagline: 'Premium office or retail space with full glass facade.',
+    description:
+      'Premium container office or retail space with full glass curtain wall facade. Black aluminum frame. Perfect for construction site headquarters, showrooms, and pop-up retail.',
+    image:
+      'https://aka.doubaocdn.com/s/3brsPJak9V',
+    specs: [
+      { label: 'Size', value: '20ft / 40ft' },
+      { label: 'Facade', value: 'Full glass curtain wall' },
+      { label: 'Frame', value: 'Black aluminum alloy' },
+      { label: 'Glass', value: 'Double glazing, tempered' },
+      { label: 'Interior', value: 'Office-ready, AC included' },
+      { label: 'Life Span', value: '20+ years' },
+    ],
+    features: [
+      'Full glass facade for maximum natural light',
+      'Modern black aluminum frame',
+      'Can connect multiple units side by side',
+      'Branding and signage ready',
+    ],
+    bestFor: 'Site offices, retail showrooms, pop-up stores',
+  },
+  {
+    id: 'site-dormitory',
+    name: 'Two-Story Site Dormitory',
+    tagline: 'Large-scale project accommodation, stackable units.',
+    description:
+      'Large-scale two-story worker dormitory. Long row of stackable units with external staircase and balcony. Ideal for construction site housing and large project camps.',
+    image:
+      'https://aka.doubaocdn.com/s/xkzNdCO8AO',
+    specs: [
+      { label: 'Unit Size', value: '20ft per unit' },
+      { label: 'Stories', value: '2 floors (can go higher)' },
+      { label: 'Layout', value: 'Dormitory / office / accommodation' },
+      { label: 'Staircase', value: 'External steel staircase' },
+      { label: 'Capacity', value: '4-8 people per unit' },
+      { label: 'Life Span', value: '20+ years' },
+    ],
+    features: [
+      'Stackable up to 3-4 floors',
+      'External staircase and shared balcony',
+      'Fast deployment for large projects',
+      'Electrical and plumbing included',
+    ],
+    bestFor: 'Construction site camps, worker housing, temporary offices',
   },
 ];
