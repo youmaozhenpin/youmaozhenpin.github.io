@@ -31,7 +31,7 @@ export default function Knowledge() {
                 Tell us your requirements — size, quantity, destination — and get
                 a detailed quote with shipping within 48 hours.
               </p>
-              <a href="/contact" className="featured-link">Open quote form →</a>
+              <a href="https://wa.me/8615690180200?text=Hi%2C%20I%27m%20interested%20in%20your%20prefab%20houses." target="_blank" rel="noopener noreferrer" className="featured-link">Chat on WhatsApp →</a>
             </div>
           </div>
         </div>

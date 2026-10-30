@@ -57,7 +57,7 @@ export default function Navbar() {
             <Link to="/industries" className={location.pathname === '/industries' ? 'active' : ''}>Industries</Link>
             <Link to="/knowledge" className={location.pathname === '/knowledge' ? 'active' : ''}>Knowledge</Link>
             <Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''}>Contact</Link>
-            <Link to="/contact" className="btn btn-primary nav-cta">Get Quote →</Link>
+            <a href="https://wa.me/8615690180200?text=Hi%2C%20I%27m%20interested%20in%20your%20prefab%20houses." target="_blank" rel="noopener noreferrer" className="btn btn-primary nav-cta">Get Quote →</a>
           </nav>
 
           <button

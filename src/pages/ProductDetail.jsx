@@ -64,7 +64,7 @@ export default function ProductDetail() {
             <p className="detail-tagline">{product.tagline}</p>
             <p className="detail-desc">{product.description}</p>
             <div className="detail-actions">
-              <Link to="/contact" className="btn btn-primary">Request Quote</Link>
+              <a href="https://wa.me/8615690180200?text=Hi%2C%20I%27m%20interested%20in%20the%20${product.name}." target="_blank" rel="noopener noreferrer" className="btn btn-primary">Request Quote</a>
               <Link to="/products" className="btn btn-outline">← All Products</Link>
             </div>
           </div>

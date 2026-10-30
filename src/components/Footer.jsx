@@ -32,7 +32,7 @@ export default function Footer() {
             <Link to="/about">About Us</Link>
             <Link to="/about">Factory</Link>
             <Link to="/contact">Contact</Link>
-            <Link to="/contact">Get a Quote</Link>
+            <a href="https://wa.me/8615690180200?text=Hi%2C%20I%27m%20interested%20in%20your%20prefab%20houses." target="_blank" rel="noopener noreferrer">Get a Quote</a>
           </div>
 
           <div className="footer-col">

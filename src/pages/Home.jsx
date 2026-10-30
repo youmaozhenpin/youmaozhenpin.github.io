@@ -19,7 +19,7 @@ export default function Home() {
             full light-steel villa community.
           </p>
           <div className="hero-actions">
-            <Link to="/contact" className="btn btn-primary">Get a Free Quote →</Link>
+            <a href="https://wa.me/8615690180200?text=Hi%2C%20I%27m%20interested%20in%20your%20prefab%20houses." target="_blank" rel="noopener noreferrer" className="btn btn-primary">Get a Free Quote →</a>
             <Link to="/products" className="btn btn-outline">Explore Products</Link>
           </div>
         </div>
@@ -111,7 +111,7 @@ export default function Home() {
         <div className="container">
           <h2>Ready to start your project?</h2>
           <p>Tell us your requirements and get a detailed quote within 48 hours.</p>
-          <Link to="/contact" className="btn btn-primary">Request a Quote →</Link>
+          <a href="https://wa.me/8615690180200?text=Hi%2C%20I%27m%20interested%20in%20your%20prefab%20houses." target="_blank" rel="noopener noreferrer" className="btn btn-primary">Request a Quote →</a>
         </div>
       </section>
     </div>

@@ -96,9 +96,9 @@ export default function IndustryDetail() {
               ))}
             </div>
 
-            <Link to="/contact" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center', marginTop: '20px' }}>
+            <a href="https://wa.me/8615690180200?text=Hi%2C%20I%27m%20interested%20in%20your%20prefab%20houses." target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center', marginTop: '20px' }}>
               Request a Quote →
-            </Link>
+            </a>
           </aside>
         </div>
       </section>
