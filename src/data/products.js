@@ -30,7 +30,7 @@ export const products = [
     description:
       'Our best-selling flat-pack range. Delivered as panels, assembled on site with basic tools. Perfect for offices, clinics, hotels, and staff housing.',
     image:
-      'https://aka.doubaocdn.com/s/7ppKwIXTLz',
+      'https://aka.doubaocdn.com/s/00NKkVNspk',
     specs: [
       { label: 'Standard Size', value: '20ft / 40ft available' },
       { label: 'Wall Panel', value: '50mm EPS / rockwool sandwich' },
@@ -54,7 +54,7 @@ export const products = [
     description:
       'The most popular product for residential and Airbnb use. Two wings hydraulically expand to reveal a spacious open-plan living area — your house in a shipping container.',
     image:
-      'https://aka.doubaocdn.com/s/VLaiWcLSww',
+      'https://aka.doubaocdn.com/s/5CwdUkypiw',
     specs: [
       { label: 'Expanded Size', value: '5900 × 6300 × 2500 mm' },
       { label: 'Living Area', value: '≈ 37 m²' },
@@ -78,7 +78,7 @@ export const products = [
     description:
       'Custom-designed luxury homes built on a light gauge steel frame. Fully customized floor plans, facades, and interiors — delivered to your site as a kit.',
     image:
-      'https://aka.doubaocdn.com/s/SxvPuHaEag',
+      'https://aka.doubaocdn.com/s/kts3yUGQ2j',
     specs: [
       { label: 'Custom Size', value: '80 m² – 500 m²' },
       { label: 'Stories', value: '1–3 floors' },
@@ -102,7 +102,7 @@ export const products = [
     description:
       'A premium office solution with glass facades, air conditioning, and modern interiors. Perfect for construction site headquarters, co-working spaces, and retail pop-ups.',
     image:
-      'https://aka.doubaocdn.com/s/z4SB9bVAbD',
+      'https://aka.doubaocdn.com/s/3brsPJak9V',
     specs: [
       { label: 'Size', value: '20ft / 40ft' },
       { label: 'Glass Wall', value: 'Double glazing, optional' },
@@ -126,7 +126,7 @@ export const products = [
     description:
       'A compact luxury home on a trailer or permanent foundation. Designed for nomads, weekend getaways, and eco-living enthusiasts — fully off-grid capable.',
     image:
-      'https://aka.doubaocdn.com/s/fnwqaW64BJ',
+      'https://aka.doubaocdn.com/s/bPVevj73nk',
     specs: [
       { label: 'Size', value: '6m / 8m / 10m length' },
       { label: 'Area', value: '18 m² – 35 m²' },

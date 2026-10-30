@@ -8,7 +8,7 @@ export default function Home() {
       {/* ===== HERO ===== */}
       <section className="hero grid-bg">
         <div className="container hero-content">
-          <span className="hero-badge">CE CERTIFIED · ISO 9001 · FACTORY DIRECT</span>
+          <span className="hero-badge">FACTORY DIRECT · 20+ YEARS</span>
           <h1>
             Your Modular Home,<br />
             <span className="hero-accent">Built in Weeks.</span>
@@ -73,8 +73,8 @@ export default function Home() {
               <p>FOB, CIF, DDP — we handle everything to your port or your door. 40HQ containers worldwide.</p>
             </div>
             <div className="feature">
-              <h3>Certified Quality</h3>
-              <p>CE, ISO 9001, SGS inspected. Steel, insulation, electrical — all meet international standards.</p>
+              <h3>Strict Quality Control</h3>
+              <p>Every unit inspected before shipping. Steel, insulation, electrical — all meet international standards.</p>
             </div>
           </div>
         </div>
