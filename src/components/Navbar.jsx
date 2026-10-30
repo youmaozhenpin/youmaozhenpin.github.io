@@ -28,10 +28,6 @@ export default function Navbar() {
             <a href="mailto:youmaozhenpin0410@gmail.com">youmaozhenpin0410@gmail.com</a>
           </div>
           <div className="topbar-right">
-            <span className="topbar-yellow">ISO 9001:2015</span>
-            <span className="topbar-yellow">·</span>
-            <span className="topbar-yellow">CE CERTIFIED</span>
-            <span className="dot">·</span>
             <span>Hengshui, Hebei, China</span>
           </div>
         </div>
