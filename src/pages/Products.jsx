@@ -68,6 +68,27 @@ export default function Products() {
                 <p style={{ margin: 0, color: '#666', fontSize: '14px' }}>Luxury glamping pod with floor-to-ceiling glass. Ideal for resorts and scenic spots.</p>
               </div>
             </div>
+            <div style={{ borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}>
+              <img src="https://aka.doubaocdn.com/s/5CwdUkypiw" alt="Seaside Resort Villas" style={{ width: '100%', height: '280px', objectFit: 'cover' }} />
+              <div style={{ padding: '20px', background: 'white' }}>
+                <h4 style={{ margin: '0 0 8px', fontSize: '18px' }}>Seaside Resort Villas</h4>
+                <p style={{ margin: 0, color: '#666', fontSize: '14px' }}>Multiple units arranged as a beachfront resort. Perfect for hospitality projects.</p>
+              </div>
+            </div>
+            <div style={{ borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}>
+              <img src="https://aka.doubaocdn.com/s/3brsPJak9V" alt="Glass Curtain Wall Container" style={{ width: '100%', height: '280px', objectFit: 'cover' }} />
+              <div style={{ padding: '20px', background: 'white' }}>
+                <h4 style={{ margin: '0 0 8px', fontSize: '18px' }}>Glass Curtain Wall Container</h4>
+                <p style={{ margin: 0, color: '#666', fontSize: '14px' }}>Premium office or retail space with full glass facade. Black aluminum frame.</p>
+              </div>
+            </div>
+            <div style={{ borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}>
+              <img src="https://aka.doubaocdn.com/s/xkzNdCO8AO" alt="Two-Story Worker Dormitory" style={{ width: '100%', height: '280px', objectFit: 'cover' }} />
+              <div style={{ padding: '20px', background: 'white' }}>
+                <h4 style={{ margin: '0 0 8px', fontSize: '18px' }}>Two-Story Site Dormitory</h4>
+                <p style={{ margin: 0, color: '#666', fontSize: '14px' }}>Large-scale project accommodation. Stackable units with external staircase and balcony.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
