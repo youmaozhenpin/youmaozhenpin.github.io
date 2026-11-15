@@ -6,7 +6,7 @@ export const products = [
     description:
       'The fastest-to-deploy housing solution on the market. Prefolded at factory, simply unfold on site — ideal for construction camps, disaster relief, and emergency accommodation.',
     image:
-      'https://aka.doubaocdn.com/s/s6Cw9ZLRvO',
+      '/products/foldable-container.jpg',
     specs: [
       { label: 'Size', value: '5800 × 2438 × 2438 mm' },
       { label: 'Folded Size', value: '5800 × 2438 × 780 mm' },
@@ -30,7 +30,7 @@ export const products = [
     description:
       'Our best-selling flat-pack range. Delivered as panels, assembled on site with basic tools. Perfect for offices, clinics, hotels, and staff housing.',
     image:
-      'https://aka.doubaocdn.com/s/7ppKwIXTLz',
+      '/products/flat-pack-container.jpg',
     specs: [
       { label: 'Standard Size', value: '20ft / 40ft available' },
       { label: 'Wall Panel', value: '50mm EPS / rockwool sandwich' },
@@ -54,7 +54,7 @@ export const products = [
     description:
       'The most popular product for residential and Airbnb use. Two wings hydraulically expand to reveal a spacious open-plan living area — your house in a shipping container.',
     image:
-      'https://aka.doubaocdn.com/s/VLaiWcLSww',
+      '/products/expandable-container.jpg',
     specs: [
       { label: 'Expanded Size', value: '5900 × 6300 × 2500 mm' },
       { label: 'Living Area', value: '≈ 37 m²' },
@@ -78,7 +78,7 @@ export const products = [
     description:
       'Custom-designed luxury homes built on a light gauge steel frame. Fully customized floor plans, facades, and interiors — delivered to your site as a kit.',
     image:
-      'https://aka.doubaocdn.com/s/SxvPuHaEag',
+      '/products/light-steel-villa.jpg',
     specs: [
       { label: 'Custom Size', value: '80 m² – 500 m²' },
       { label: 'Stories', value: '1–3 floors' },
@@ -102,7 +102,7 @@ export const products = [
     description:
       'A premium office solution with glass facades, air conditioning, and modern interiors. Perfect for construction site headquarters, co-working spaces, and retail pop-ups.',
     image:
-      'https://aka.doubaocdn.com/s/z4SB9bVAbD',
+      '/products/container-office.jpg',
     specs: [
       { label: 'Size', value: '20ft / 40ft' },
       { label: 'Glass Wall', value: 'Double glazing, optional' },
@@ -126,7 +126,7 @@ export const products = [
     description:
       'A compact luxury home on a trailer or permanent foundation. Designed for nomads, weekend getaways, and eco-living enthusiasts — fully off-grid capable.',
     image:
-      'https://aka.doubaocdn.com/s/fnwqaW64BJ',
+      '/products/tiny-house.jpg',
     specs: [
       { label: 'Size', value: '6m / 8m / 10m length' },
       { label: 'Area', value: '18 m² – 35 m²' },
@@ -150,7 +150,7 @@ export const products = [
     description:
       'Two-story stackable container house with external staircase and balcony. Wood grain finish. Perfect for offices, dormitories, and small residential buildings.',
     image:
-      'https://aka.doubaocdn.com/s/kts3yUGQ2j',
+      '/products/double-story-house.jpg',
     specs: [
       { label: 'Size', value: '20ft per unit' },
       { label: 'Stories', value: '2 floors' },
@@ -174,7 +174,7 @@ export const products = [
     description:
       'Spacious single-story flat pack house with covered porch and wooden deck. Yellow exterior finish. Ideal for small family homes, granny flats, and guest houses.',
     image:
-      'https://aka.doubaocdn.com/s/00NKkVNspk',
+      '/products/porch-flat-pack.jpg',
     specs: [
       { label: 'Size', value: '30ft / 40ft available' },
       { label: 'Porch', value: 'Covered, with deck' },
@@ -198,7 +198,7 @@ export const products = [
     description:
       'Luxury glamping pod / apple cabin with floor-to-ceiling panoramic glass. Smart LED lighting, premium interior. The most popular choice for resorts and scenic spots.',
     image:
-      'https://aka.doubaocdn.com/s/bPVevj73nk',
+      '/products/apple-cabin.jpg',
     specs: [
       { label: 'Size', value: 'S88 / S90 / S120 available' },
       { label: 'Glass', value: 'Floor-to-ceiling panoramic' },
@@ -222,7 +222,7 @@ export const products = [
     description:
       'Multiple container villa units arranged as a beachfront resort community. Perfect for hospitality projects, beach resorts, and vacation rental communities.',
     image:
-      'https://aka.doubaocdn.com/s/5CwdUkypiw',
+      '/products/seaside-villas.jpg',
     specs: [
       { label: 'Unit Size', value: '20ft / 40ft' },
       { label: 'Arrangement', value: 'Multiple units' },
@@ -246,7 +246,7 @@ export const products = [
     description:
       'Premium container office or retail space with full glass curtain wall facade. Black aluminum frame. Perfect for construction site headquarters, showrooms, and pop-up retail.',
     image:
-      'https://aka.doubaocdn.com/s/3brsPJak9V',
+      '/products/glass-office.jpg',
     specs: [
       { label: 'Size', value: '20ft / 40ft' },
       { label: 'Facade', value: 'Full glass curtain wall' },
@@ -270,7 +270,7 @@ export const products = [
     description:
       'Large-scale two-story worker dormitory. Long row of stackable units with external staircase and balcony. Ideal for construction site housing and large project camps.',
     image:
-      'https://aka.doubaocdn.com/s/xkzNdCO8AO',
+      '/products/site-dormitory.jpg',
     specs: [
       { label: 'Unit Size', value: '20ft per unit' },
       { label: 'Stories', value: '2 floors (can go higher)' },
