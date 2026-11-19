@@ -35,7 +35,7 @@ export default function Contact() {
             </div>
             <div className="info-block">
               <h4>Email</h4>
-              <p>youmaozhenpin1107@gmail.com</p>
+              <p>youmao0903@gmail.com</p>
             </div>
             <div className="info-block">
               <h4>Factory</h4>

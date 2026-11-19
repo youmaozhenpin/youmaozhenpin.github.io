@@ -25,7 +25,7 @@ export default function Navbar() {
           <div className="topbar-left">
             <a href="https://wa.me/8615690180200" target="_blank" rel="noopener noreferrer">WhatsApp: +86 15690180200</a>
             <span className="dot">·</span>
-            <a href="mailto:youmaozhenpin1107@gmail.com">youmaozhenpin1107@gmail.com</a>
+            <a href="mailto:youmao0903@gmail.com">youmao0903@gmail.com</a>
           </div>
           <div className="topbar-right">
             <span>Hengshui, Hebei, China</span>
