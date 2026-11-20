@@ -1,12 +1,71 @@
 import { useState } from 'react';
 import './Contact.css';
 
+// Web3Forms access key —— 从 web3forms.com 用 youmao0903@gmail.com 领取后替换下面这串。
+// 密钥可以公开放在前端，Web3Forms 官方允许。
+const ACCESS_KEY = '36ef4048-eaa6-4cce-915f-4c3eb587cfcd';
+const FORM_ENDPOINT = 'https://api.web3forms.com/submit';
+
+const PRODUCT_OPTIONS = [
+  'Foldable Container House',
+  'Flat Pack Container House',
+  'Expandable Container House',
+  'Light Steel Villa',
+  'Container Office',
+  'Luxury Tiny House',
+  'Double-Story Container House',
+  'Flat Pack House with Porch',
+  'Apple Cabin / Space Capsule',
+  'Seaside Resort Villas',
+  'Glass Curtain Wall Container',
+  'Two-Story Site Dormitory',
+  'Other / Custom',
+];
+
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
+    setError('');
+
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    // 预留字段：未填入真实密钥前保持原展示行为，不破坏线上表单
+    if (ACCESS_KEY === 'YOUR_ACCESS_KEY_HERE') {
+      console.warn('Web3Forms access key not configured yet.');
+      setSubmitted(true);
+      return;
+    }
+
+    data.append('access_key', ACCESS_KEY);
+    data.append('subject', 'New Inquiry from Youmao Zhenpin Website');
+    data.append('from_name', 'Youmao Zhenpin Website');
+
+    setSending(true);
+    try {
+      const res = await fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        body: data,
+        headers: { Accept: 'application/json' },
+      });
+      const json = await res.json();
+      if (json.success) {
+        setSubmitted(true);
+      } else {
+        setError(
+          json.message ||
+            'Something went wrong. Please try again, or message us directly on WhatsApp.'
+        );
+      }
+    } catch (err) {
+      setError('Network error. Please try again, or message us directly on WhatsApp.');
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -80,38 +139,46 @@ export default function Contact() {
                 </p>
 
                 <div className="form-row">
-                  <input type="text" placeholder="NAME *" required />
-                  <input type="text" placeholder="COMPANY" />
+                  <input type="text" name="name" placeholder="NAME *" required />
+                  <input type="text" name="company" placeholder="COMPANY" />
                 </div>
 
                 <div className="form-row">
-                  <input type="email" placeholder="EMAIL *" required />
-                  <input type="tel" placeholder="WHATSAPP / PHONE" />
+                  <input type="email" name="email" placeholder="EMAIL *" required />
+                  <input type="tel" name="whatsapp" placeholder="WHATSAPP / PHONE" />
                 </div>
 
-                <select required defaultValue="">
+                <select name="product" required defaultValue="">
                   <option value="" disabled>PRODUCT INTEREST *</option>
-                  <option>Foldable Container House</option>
-                  <option>Flat Pack Container</option>
-                  <option>Expandable Container House</option>
-                  <option>Light Steel Villa</option>
-                  <option>Container Office</option>
-                  <option>Tiny House</option>
-                  <option>Other / Custom</option>
+                  {PRODUCT_OPTIONS.map((opt) => (
+                    <option key={opt} value={opt}>{opt}</option>
+                  ))}
                 </select>
 
                 <div className="form-row">
-                  <input type="text" placeholder="QUANTITY" />
-                  <input type="text" placeholder="DESTINATION COUNTRY" />
+                  <input type="text" name="quantity" placeholder="QUANTITY" />
+                  <input type="text" name="country" placeholder="DESTINATION COUNTRY" />
                 </div>
 
                 <textarea
+                  name="message"
                   rows="5"
                   placeholder="TELL US ABOUT YOUR PROJECT — SIZE, LAYOUT, TIMELINE, SPECIAL REQUIREMENTS..."
                 />
 
-                <button type="submit" className="btn btn-primary send-btn">
-                  Send <span className="arrow">→</span>
+                {/* Honeypot spam protection (hidden from humans) */}
+                <input
+                  type="checkbox"
+                  name="botcheck"
+                  tabIndex="-1"
+                  autoComplete="off"
+                  style={{ display: 'none' }}
+                />
+
+                {error && <p className="form-error">{error}</p>}
+
+                <button type="submit" className="btn btn-primary send-btn" disabled={sending}>
+                  {sending ? 'Sending…' : 'Send'} <span className="arrow">→</span>
                 </button>
               </form>
             )}
